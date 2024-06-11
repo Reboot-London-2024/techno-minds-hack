@@ -6,7 +6,7 @@
 
 nav {
     padding: 20px;
-    padding-left: 0;
+    padding-left: 10%;
     background-color: #1E4832;
     position: fixed;
     top: 0;
@@ -30,6 +30,11 @@ button {
     color: white;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 .main-section-wrapper {
     font-family: Arial, sans-serif;
     padding-top: 20%;
@@ -42,23 +47,54 @@ button {
 }
 
 .profile-wrapper {
+    padding-bottom: 5px;
+}
+
+.profile-list {
     display: grid;
+    margin: auto;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    grid-template-rows: repeat(3, auto); /* 3 rows */
+    grid-template-rows: repeat(4, auto); /* 3 rows */
     gap: 10px; /* Gap between grid items */
     border: 1px solid #ccc;
     border-radius: 5px;
+    list-style: none;
     padding: 10px;
     width: 300px; /* adjust width as needed */
     grid-template-areas:
-        "roleName progressBar"
+        "profileImg roleName"
+        "progressBar progressBar"
         "lineManager offerMade"
         "salary startDate";
 }
 
-.profile-wrapper li:nth-child(1) { grid-area: roleName; }
-.profile-wrapper li:nth-child(2) { grid-area: progressBar; }
-.profile-wrapper li:nth-child(3) { grid-area: lineManager; }
-.profile-wrapper li:nth-child(4) { grid-area: offerMade; }
-.profile-wrapper li:nth-child(5) { grid-area: salary; }
-.profile-wrapper li:nth-child(6) { grid-area: startDate; }
+.profile-wrapper li:nth-child(1) { grid-area: profileImg; }
+.profile-wrapper li:nth-child(2) { grid-area: roleName; }
+.profile-wrapper li:nth-child(3) { grid-area: progressBar; }
+.profile-wrapper li:nth-child(4) { grid-area: lineManager; }
+.profile-wrapper li:nth-child(5) { grid-area: offerMade; }
+.profile-wrapper li:nth-child(6) { grid-area: salary; }
+.profile-wrapper li:nth-child(7) { grid-area: startDate; }
+
+.checklist-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.checklist-list {
+    list-style: none;
+    height: 5%;
+    margin: 5px 0;
+    padding: 10%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.checklist-list li {
+    justify-content: center;
+}
