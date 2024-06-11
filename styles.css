@@ -150,3 +150,8 @@ body {
     line-height: 30px;
     color: white;
 }
+
+.title-wrapper {
+    display: flex;
+    justify-content: center;
+}
