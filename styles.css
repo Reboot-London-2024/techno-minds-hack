@@ -13,6 +13,9 @@ nav {
     margin: 0;
     width: 100%;
     color: white;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
 
 footer {
@@ -37,7 +40,7 @@ a {
 
 .main-section-wrapper {
     font-family: Arial, sans-serif;
-    padding-top: 20%;
+    padding-top: 30%;
 }
 
 .footer-link-list {
@@ -76,6 +79,14 @@ a {
 .profile-wrapper li:nth-child(6) { grid-area: salary; }
 .profile-wrapper li:nth-child(7) { grid-area: startDate; }
 
+.profile-icon {
+    width: 35%;
+}
+
+.first-day-logo {
+    width: 15%;
+}
+
 .checklist-wrapper {
     display: flex;
     justify-content: center;
@@ -97,4 +108,18 @@ a {
 
 .checklist-list li {
     justify-content: center;
+}
+
+.not-ready {
+    color:#ccc;
+}
+
+.item-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.wallet-item {
+    width: 50%;
 }
