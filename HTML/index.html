@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head id="head-placeholder">
-        <script>
-            fetch('head.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('head-placeholder').outerHTML = data;
-                });
-        </script>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script defer src="../script.js"></script>
+</head>
 <body>
     <nav>
         First Days
     </nav>
     <div class="main-section-wrapper">
         <main>
-            <section>
-                <h2>About</h2>
-                <p>Reboot 2024 Hack</p>
-            </section>
+            <div class="profile-wrapper">
+                <ul class="profile-list">
+                    <li>Role Name: Software Engineer</li>
+                    <li>
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                        </div>
+                    </li>
+                    <li>Line Manager: Manger Managinton</li>
+                    <li>Offer Made: Yes</li>
+                    <li>Salary: £30.000</li>
+                    <li>Start Date: 11/06/2024</li>
+                </ul>
+            </div>
         </main>
     </div>
     <footer>

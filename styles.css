@@ -40,3 +40,25 @@ button {
     display: flex;
     justify-content: space-between;
 }
+
+.profile-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(3, auto); /* 3 rows */
+    gap: 10px; /* Gap between grid items */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px; /* adjust width as needed */
+    grid-template-areas:
+        "roleName progressBar"
+        "lineManager offerMade"
+        "salary startDate";
+}
+
+.profile-wrapper li:nth-child(1) { grid-area: roleName; }
+.profile-wrapper li:nth-child(2) { grid-area: progressBar; }
+.profile-wrapper li:nth-child(3) { grid-area: lineManager; }
+.profile-wrapper li:nth-child(4) { grid-area: offerMade; }
+.profile-wrapper li:nth-child(5) { grid-area: salary; }
+.profile-wrapper li:nth-child(6) { grid-area: startDate; }
