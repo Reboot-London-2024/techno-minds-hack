@@ -41,6 +41,7 @@ a {
 .main-section-wrapper {
     font-family: Arial, sans-serif;
     padding-top: 30%;
+    flex: 1;
 }
 
 .footer-link-list {
@@ -104,6 +105,11 @@ a {
     align-items: center;
     border: 1px solid #ccc;
     border-radius: 5px;
+}
+
+.checklist-list a {
+    color: black;
+    text-decoration: none;
 }
 
 .checklist-list li {
