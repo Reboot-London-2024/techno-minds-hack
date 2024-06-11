@@ -1,0 +1,29 @@
+name: Sync to Google Cloud Storage
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+
+jobs:
+  upload-to-gcs:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Cloud SDK
+      uses: google-github-actions/setup-gcloud@v0.2.0
+      with:
+        version: 'latest'
+        service_account_key: ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }}
+
+    - name: Authenticate to GCP
+      run: |
+        echo ${{ secrets.GCP_SERVICE_ACCOUNT_KEY }} > ${HOME}/gcp-key.json
+        gcloud auth activate-service-account --key-file=${HOME}/gcp-key.json
+
+    - name: Upload files to GCS
+      run: |
+        gsutil cp -r . gs://techno_minds/
