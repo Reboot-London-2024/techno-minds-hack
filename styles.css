@@ -123,3 +123,9 @@ a {
 .wallet-item {
     width: 50%;
 }
+
+.calendar-item {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
