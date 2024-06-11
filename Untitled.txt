@@ -1,0 +1,22 @@
+title Techno Minds Onboarding Work Flow Diagram
+
+participant Hiring Manager
+participant Collegue
+participant LBG First Day APP
+participant Line Manager
+
+participant Workday
+Hiring Manager->Collegue:Congratulations email
+Hiring Manager->Collegue:LBG First Day APP Login Details
+LBG First Day APP<-Collegue:Login
+LBG First Day APP-> Collegue:Accessibility Considerations
+LBG First Day APP-> Collegue:Welcome video from Charlie
+LBG First Day APP-> Collegue:Home Screen
+note over Collegue,LBG First Day APP:Click Help menu for **instructions**
+Collegue--> LBG First Day APP: Request first day pass
+Collegue<-->LBG First Day APP: Calendar Page
+Line Manager-->Workday:Access request \nto be productive Day 1
+Line Manager--> Collegue:First day specific guidance
+Line Manager--> Collegue:**Assign buddy**
+Collegue<--> Line Manager:Temperature checks 30/60/90 Days
+
