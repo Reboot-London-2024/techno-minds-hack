@@ -6,7 +6,8 @@ function startProgress() {
         if (width >= 100) {
             clearInterval(interval);
         } else {
-            width++;
+            width = 80;
+            // width++;
             progressBar.style.width = width + '%';
             progressBar.innerHTML = width + '%';
         }
